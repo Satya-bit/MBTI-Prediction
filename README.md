@@ -32,3 +32,11 @@ Majority of the posts have positive sentiment.
 
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/546c4fa8-8fac-429b-95df-9a99fefb6be8)
 
+# DATA CLEANING AND PREPROCESSING
+We clean text like removing hyperlinks, spaces using regex also removed stop words using NLP library. We also performed tokenization and padding.
+
+=>Initial Tweet
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/d01ec40b-a95e-4620-960e-3b6f3e69a37b)
+
+=> After cleaning
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/9b1c70ef-335f-42ec-acce-7a2c42208cae)
