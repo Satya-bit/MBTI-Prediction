@@ -26,6 +26,8 @@ We meticulously examined the dataset's composition and delved into the distribut
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/03b1836f-4692-41c8-9a37-97e97cb0af1f)
 
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/97b48d8e-fda9-48b6-adce-41606166d637)
+
 Majority of the posts have positive sentiment.
+
 
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/546c4fa8-8fac-429b-95df-9a99fefb6be8)
