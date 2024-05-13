@@ -8,3 +8,13 @@ The Myers-Briggs Type Indicator (MBTI) sorts people into one of 16 personality t
 • INTUITION (N) – SENSING (S)
 • THINKING (T) – FEELING (F)
 • JUDGING (J) – PERCEIVING (P)
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/5a681e1d-a357-4ef2-ab06-22d249760ec1)
+
+# DATASET DESCRIPTION
+The dataset focuses on exploring the Myers Briggs Type Indicator (MBTI), a widely used personality type system categorizing individuals into one of 16 distinct types based on preferences in four axes: Introversion/Extroversion, Intuition/Sensing, Thinking/Feeling, and Judging/Perceiving. This system, rooted in Carl Jung's cognitive functions theory, has enjoyed extensive usage across various domains including businesses, online platforms, research, and personal interest. Despite its popularity, the MBTI's validity has faced scrutiny due to inconsistencies in experimental results. The dataset aims to investigate if any discernible patterns exist between specific MBTI types and writing styles, thereby contributing to the ongoing discourse surrounding the test's efficacy in predicting and categorizing behavior.
+The dataset consists of over 8600 rows, with each row representing a person's MBTI type (a 4-letter code denoting their personality type) along with a section containing the last 50 posts made by that person. The posts are separated by "|||" (3 pipe characters).
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/3cb0255d-2883-4ee0-ac0c-a97931aef619)
+
+
