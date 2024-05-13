@@ -31,3 +31,4 @@ Majority of the posts have positive sentiment.
 
 
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/546c4fa8-8fac-429b-95df-9a99fefb6be8)
+
