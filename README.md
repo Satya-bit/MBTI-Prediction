@@ -40,3 +40,43 @@ We clean text like removing hyperlinks, spaces using regex also removed stop wor
 
 => After cleaning
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/9b1c70ef-335f-42ec-acce-7a2c42208cae)
+
+#HANDLING IMBALANCE DATASET
+
+=>RANDOM OVERSAMPLING
+To address class imbalance in our project on MBTI personality prediction, we've implemented machine learning strategies such as random oversampling. Random oversampling involves augmenting instances in the minority class until it matches the count of the majority class. Unlike SMOTE, which generates new instances based on nearest neighbours, we opt to duplicate instances from the minority class randomly. However, we're cautious about potential pitfalls; careless application may lead to overfitting as it introduces redundancy and may accentuate specific patterns unique to the minority class.
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/b2f1419b-a9fb-45d4-9743-55b1036c045f)
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/f62991f3-7d02-468d-838d-eef4559b9266)
+
+
+
+# WORD EMBEDDINGS
+
+=>FAST TEXT
+Facebook's AI Research group developed the freely available library FastText, which is a potent tool for effective text classification and learning representations. It works with the idea of word embeddings, where words are represented as dense vectors in a continuous space. FastText stands out due to its capacity to create embeddings for character n-grams as well as individual words. This allows it to process new words more effectively and understand morphological subtleties than traditional word-based embeddings. FastText is widely used for applications like as sentiment analysis, language modeling, and text classification; it is especially well-suited for contexts with constrained resources and big datasets "Crawl-300d-2M" is a pre-trained word embedding model that was developed using a large text corpus that was crawled across the internet. Compact vector representations of words used in machine learning that capture semantic relationships based on contextual usage are called word embeddings. A 300-dimensional vector is used to represent each word, as indicated by the "300d" symbol. The "2M" stands for around two million unique words or tokens, which is the dataset that the model was trained on. In many natural language processing applications, such as text classification, sentiment analysis, and machine translation, these word embedding models are used as feature extractors.
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/2537d5ee-f414-4b1f-8935-5007599c2988)
+
+# COVOLUTIONAL NEURAL NETWROK
+For text classification, a convolutioal neural network (CNN) architecture is used in the sequential model. It starts with an Embedding layer that uses non-trainable 300-dimensional pre-trained word embeddings. ReLU activates two Conv1D layers, each of which has 256 filters with a kernel size of 5, for the purpose of extracting features. Layers of MaxPooling1D with a pool size of 5 are then applied. GlobalMaxPooling1D further reduces the dimensionality of the feature map. Len(label_encoder.classes_) determines the classification probabilities for each class in the final Dense layer, which is activated by softmax. For added abstraction, two more Dense layers are added, each having 256 neurons and triggered by ReLU. With sparse categorical cross-entropy loss, the model is put together.
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/25d1f1f1-b320-4a19-bf6a-76ab915520c6)
+
+# BIDIRECTIONAL ENCODER REPRESENTATIONS FROM TRANSFORMERS(BERT)
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/3d1c739c-59e2-4deb-8e7c-c06414355c67)
+
+•A TensorFlow model is configured with the inputs and outputs. The input_word_ids layer is the value of the inputs parameter, while the output of the Dense layer (pred) is the value of the outputs parameter.
+•Loss Function: The categorical_crossentropy loss function is used when compiling the model, and it is suitable for multi-class classification problems in which the target labels are given in a format that is singularly encoded.
+•Optimizer: A learning rate of 0.00001 is applied while using the Adam optimizer. Because of its capacity for flexible learning rate, Adam is a well-liked option for deep learning model training.
+•Metrics: A statistic called accuracy is used to assess how well the model performs both during training and validation.
+
+For a multi-class classification task, this function builds a BERT-based model that is specially customized. With the help of a basic neural network classifier and the potent feature extraction capabilities of BERT, it can forecast class probabilities. We apply the normal procedure in BERT-based models for sentence-level tasks to the categorization of the [CLS] token using its embedding. Various BERT models were tested, including tiny, medium, tiny, mini, small, and BERT-based. There is less space needed for this compact BERT variant. Bert-base-uncased was our last attempt, and it produced an accuracy of 69%.
+
+# ACCURACY
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/9f88c9f1-79f3-4178-8efa-3b9dff25df89)
+
+ We got high testing accuracy because we were having highly imbalanced dataset. Though we tried to handle imbalance datset but it was difficult and didn't improve much of the accuracy
+
