@@ -18,3 +18,14 @@ The dataset consists of over 8600 rows, with each row representing a person's MB
 ![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/3cb0255d-2883-4ee0-ac0c-a97931aef619)
 
 
+# EXPLORATORY DATA ANALYSIS
+We meticulously examined the dataset's composition and delved into the distribution of personality types. Through correlation and comparative analyses, we unveiled intriguing patterns and insights into behavioral trends across different MBTI types. While mindful of limitations, our findings fuel our quest for deeper understanding, guiding future investigations into the rich tapestry of human personality dynamics.
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/173572d2-6b87-42e9-8ff3-7c8e64b78d78)
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/03b1836f-4692-41c8-9a37-97e97cb0af1f)
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/97b48d8e-fda9-48b6-adce-41606166d637)
+Majority of the posts have positive sentiment.
+
+![image](https://github.com/Satya-bit/MBTI-Prediction/assets/70309925/546c4fa8-8fac-429b-95df-9a99fefb6be8)
